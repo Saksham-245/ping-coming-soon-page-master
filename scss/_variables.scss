@@ -4,4 +4,5 @@ $color-seconday-red: rgb(255, 82, 99);
 $font-size: 20px;
 $font-family: "Libre Franklin";
 $font-weights: ( "regular": 300, "medium": 600, "large": 700, );
-$mobile: 375px;
+$mobile-min: 320px;
+$mobile-max: 480px;
