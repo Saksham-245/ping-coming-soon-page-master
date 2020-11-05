@@ -13,8 +13,7 @@ button.addEventListener('click', function() {
         error.textContent = 'Whoops! It looks like you forgot to add your email'
         borderColor();
     } else {
-        error.textContent = 'Please provide a valid email address to submit '
-        error.style.
+        error.textContent = 'Please provide a valid email address to submit';
         borderColor();
     }
 });
