@@ -1,6 +1,6 @@
 @import "variables";
 @mixin mobile {
-    @media (min-width: mobile-sm) and (max-width: $mobile-sm-max) {
+    @media (min-width: $mobile-sm) and (max-width: $mobile-sm-max) {
         .img {
             padding-right: 70px;
         }
