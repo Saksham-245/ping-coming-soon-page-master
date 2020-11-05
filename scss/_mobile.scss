@@ -1,2 +1,110 @@
 @import "variables";
-@mixin mobile {}
+@mixin mobile {
+    @media (min-width: 320px) and (max-width: 375px) {
+        .img {
+            padding-right: 70px;
+        }
+        .heading {
+            h3 {
+                font-size: 27px;
+                margin-top: 40px;
+            }
+            p {
+                margin-top: 30px;
+            }
+        }
+        .inputs {
+            margin-right: 185px;
+            input[type="email"] {
+                font-size: $font-size;
+                width: 170%;
+                padding-left: 5%;
+                margin-left: 12%;
+            }
+            .notify {
+                margin-left: 25%;
+                padding-left: 70px;
+                padding-right: 84px;
+                border-radius: 20px;
+            }
+            #input-error {
+                font-size: 10px;
+                margin-top: 20px;
+                margin-left: 10%;
+                width: 147%;
+            }
+            .btn {
+                margin-top: 20px;
+            }
+        }
+        .main-image img {
+            width: 55%;
+            margin-left: 300px;
+            width: 90%;
+            margin-left: 15px;
+        }
+        .social-icons {
+            margin-left: 105px;
+            margin-top: 20px;
+        }
+        footer {
+            #ping {
+                margin-top: 20px;
+                margin-left: 5px;
+            }
+        }
+    }
+    @media (min-width: $mobile-min) and (max-width: $mobile-max) {
+        .img {
+            padding-right: 70px;
+        }
+        .heading {
+            h3 {
+                font-size: 27px;
+                margin-top: 40px;
+            }
+            p {
+                margin-top: 30px;
+            }
+        }
+        .inputs {
+            margin-right: 185px;
+            input[type="email"] {
+                font-size: $font-size;
+                width: 140%;
+                padding-left: 5%;
+                margin-left: 21%;
+            }
+            .notify {
+                margin-left: 32%;
+                padding-left: 70px;
+                padding-right: 84px;
+                border-radius: 20px;
+            }
+            #input-error {
+                font-size: 10px;
+                margin-top: 20px;
+                margin-left: 15%;
+            }
+            .btn {
+                margin-top: 20px;
+            }
+        }
+        .main-image img {
+            width: 55%;
+            margin-left: 300px;
+            width: 90%;
+            margin-left: 15px;
+        }
+        .social-icons {
+            margin-left: 125px;
+            margin-top: 20px;
+        }
+        footer {
+            #ping {
+                margin-top: 20px;
+                margin-left: 5px;
+            }
+        }
+    }
+}

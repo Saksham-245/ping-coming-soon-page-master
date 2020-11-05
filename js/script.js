@@ -4,16 +4,17 @@ const button = document.querySelector('button');
 const regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 
-button.addEventListener('mouseover', function() {
+button.addEventListener('click', function() {
     if (email.value.match(regex)) {
         error.textContent = ''
         error.style.color = 'hsl(223, 100%, 88%)'
         email.style.borderColor = 'transparent'
     } else if (email.value === '') {
-        error.textContent = 'The input field can not be blank'
+        error.textContent = 'Whoops! It looks like you forgot to add your email'
         borderColor();
     } else {
-        error.textContent = 'Please enter valid email address'
+        error.textContent = 'Please provide a valid email address to submit '
+        error.style.
         borderColor();
     }
 });

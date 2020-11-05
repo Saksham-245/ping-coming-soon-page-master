@@ -2,6 +2,7 @@
 @import "resets";
 @import "variables";
 @import "button";
+@import "mobile";
 body {
     background: white;
     font-family: $font-family;
@@ -77,7 +78,7 @@ p {
         margin-top: 6px;
         color: $color-seconday-red;
         font-family: $font-family;
-        margin-left: -210px;
+        margin-left: -115px;
         font-size: 12px;
     }
 }
@@ -129,56 +130,4 @@ footer {
     }
 }
 
-@media (min-width: $mobile-min) and (max-width: $mobile-max) {
-    .img {
-        padding-right: 70px;
-    }
-    .heading {
-        h3 {
-            font-size: 27px;
-            margin-top: 40px;
-        }
-        p {
-            margin-top: 30px;
-        }
-    }
-    .inputs {
-        margin-right: 185px;
-        input[type="email"] {
-            font-size: $font-size;
-            width: 140%;
-            padding-left: 5%;
-            margin-left: 21%;
-        }
-        .notify {
-            margin-left: 32%;
-            padding-left: 70px;
-            padding-right: 84px;
-            border-radius: 20px;
-        }
-        #input-error {
-            font-size: 10px;
-            margin-top: 20px;
-            margin-left: 15%;
-        }
-        .btn {
-            margin-top: 20px;
-        }
-    }
-    .main-image img {
-        width: 55%;
-        margin-left: 300px;
-        width: 90%;
-        margin-left: 15px;
-    }
-    .social-icons {
-        margin-left: 125px;
-        margin-top: 20px;
-    }
-    footer {
-        #ping {
-            margin-top: 20px;
-            margin-left: 5px;
-        }
-    }
-}
+@include mobile;
