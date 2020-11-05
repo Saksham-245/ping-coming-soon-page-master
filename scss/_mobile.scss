@@ -1,0 +1,54 @@
+@import "variables";
+@mixin mobile {
+    @media (max-width: $mobile) {
+        .img {
+            padding-right: 70px;
+        }
+        .heading {
+            h3 {
+                font-size: 30px;
+                margin-top: 55px;
+            }
+            p {
+                margin-top: 30px;
+            }
+        }
+        .inputs {
+            margin-right: 185px;
+            input[type="email"] {
+                width: 170%;
+                margin-left: 18%;
+                padding-left: 5%;
+            }
+            .notify {
+                margin-left: 28%;
+                padding-left: 70px;
+                padding-right: 84px;
+                border-radius: 20px;
+            }
+            #input-error {
+                font-size: 10px;
+                margin-left: 85px;
+                width: 100%;
+                margin-top: 20px;
+            }
+            .btn {
+                margin-top: 20px;
+            }
+        }
+        .main-image img {
+            margin-left: 40px;
+            width: 80%;
+        }
+        .social-icons {
+            margin-left: 110px;
+            margin-top: 20px;
+        }
+        footer {
+            #ping {
+                margin-top: 20px;
+                margin-left: 5px;
+            }
+        }
+    }
+}

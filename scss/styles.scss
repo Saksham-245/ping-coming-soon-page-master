@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,700;1,600&display=swap");
+@import "resets";
+@import "variables";
+@import "mobile";
+@import "button";
+@include mobile;
+body {
+    background: white;
+    font-family: $font-family;
+}
+
+.img {
+    width: 100%;
+    img {
+        margin-top: 50px;
+        margin-left: 47%;
+    }
+}
+
+h3 {
+    color: gray;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: map-get($font-weights, $key: regular);
+}
+
+span {
+    color: black;
+    font-weight: map-get($font-weights, $key: large);
+}
+
+p {
+    margin-top: 20px;
+    text-align: center;
+    color: black;
+}
+
+.inputs {
+    margin-left: 20px;
+    margin-top: 20px;
+    input {
+        border: 1px solid lightgray;
+        border-radius: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 1%;
+        width: 25%;
+    }
+    input[type="email"] {
+        font-size: $font-size;
+        margin-top: 20px;
+        margin-left: 35%;
+    }
+    input[type="email"]:focus {
+        outline: none;
+    }
+    @include button-base;
+    button {
+        background-color: $color-primary;
+    }
+    .btn:focus {
+        outline: none;
+    }
+    .notify {
+        color: white;
+        margin-top: -6px;
+        border-radius: 25px;
+        padding-top: 8px;
+        padding-right: 20px;
+        padding-left: 20px;
+        font-size: 21px;
+        &:hover {
+            color: lightgray;
+        }
+    }
+    p {
+        text-align: center;
+        margin-top: 6px;
+        color: $color-seconday-red;
+        font-family: $font-family;
+        margin-left: -210px;
+        font-size: 12px;
+    }
+}
+
+.main-image {
+    img {
+        margin-top: 30px;
+        width: 55%;
+        margin-left: 300px;
+        margin-right: 30px;
+    }
+}
+
+.social-icons {
+    margin-left: 45%;
+    .icons {
+        display: flex;
+        i {
+            color: $color-primary;
+        }
+        .fab {
+            padding: 15px;
+        }
+        .fa-facebook-f {
+            padding-left: 20px;
+            padding-right: 16px;
+        }
+        i {
+            border-radius: 50%;
+            border: 1px solid lightgrey;
+        }
+        i:hover {
+            color: white;
+            background-color: $color-primary;
+        }
+        .clear {
+            margin-left: 10px;
+        }
+    }
+}
+
+footer {
+    #ping {
+        margin-top: 20px;
+        font-size: 11px;
+        font-weight: map-get($font-weights, $key: regular);
+        color: gray;
+        margin-left: 45px;
+    }
+}
